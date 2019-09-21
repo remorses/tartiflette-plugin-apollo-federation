@@ -1,1 +1,1 @@
-tartiflette_scalars
+tartiflette_scalars>=0.0.6
