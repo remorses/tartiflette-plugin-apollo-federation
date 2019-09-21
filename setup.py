@@ -4,7 +4,7 @@ NAME = 'tartiflette_plugin_apollo_federation'
 setup(
     name=NAME,
     # [bump]
-    version='0.0.1',
+    version='0.0.2',
     description='Plugin to compose your Tartiflette Graphql service in an Apollo federation',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
