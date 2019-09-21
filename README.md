@@ -1,4 +1,7 @@
 
+## Installation
+`pip install tartiflette_plugin_apollo_federation`
+
 See https://github.com/remorses/tartiflette-apollo-federation-example for an example
 
 ## Usage
