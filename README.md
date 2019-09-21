@@ -1,4 +1,6 @@
 
+See https://github.com/remorses/tartiflette-apollo-federation-example for an example
+
 ## Usage
 ```py
 from tartiflette_aiohttp import register_graphql_handlers
