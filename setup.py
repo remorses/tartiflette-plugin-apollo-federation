@@ -1,11 +1,11 @@
 from setuptools import setup
 
-NAME = 'module'
+NAME = 'tartiflette_plugin_apollo_federation'
 setup(
     name=NAME,
     # [bump]
     version='0.0.0',
-    description=NAME,
+    description='Plugin to compose your Tartiflette Graphql service in an Apollo federation',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
 
@@ -14,7 +14,7 @@ setup(
     license='Apache Software License 2.0',
 
     url=f'https://github.com/remorses/{NAME}',
-    keywords=['TODO'],
+    keywords=['tartiflette', 'apollo', 'federation', 'graphql'],
     install_requires=[x for x in open('./requirements.txt').read().strip().split('\n') if x.strip()],
     package_data={'': ['*.yaml', '*.json', '*.yml', 'VERSION', 'README.md', 'requirements.txt']},
     classifiers=[
