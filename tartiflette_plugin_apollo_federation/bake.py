@@ -11,7 +11,7 @@ async def bake(schema_name, config):
     @Resolver('Query._service')
     async def revolve_service(_, args, ctx, info):
         return {
-            'sdl': sdl,
+            'sdl': sdl + BUILTINS,
         }
     return _SDL
 
@@ -33,7 +33,13 @@ def get_sdl(sdl):
             full_sdl += "\n" + sdl_file.read()
     return full_sdl
 
+BUILTINS = '''
 
+scalar DateTime
+scalar Time
+scalar Date
+directive @nonIntrospectable on FIELD_DEFINITION
+'''
 _SDL = '''
 scalar _Any
 scalar _FieldSet
