@@ -41,17 +41,9 @@ services:
         ports:
             - 8000:80
         environment: 
-            CONFIG: |
-                [
-                    {
-                        "name": "1",
-                        "url": "http://service1:8001/graphql"
-                    },
-                    {
-                        "name": "2",
-                        "url": "http://service2:8002/graphql"
-                    }
-                ]
+            URL_0: "http://service1:8001/graphql"
+            URL_1: "http://service2:8002/graphql"
+
 ```
 
 
